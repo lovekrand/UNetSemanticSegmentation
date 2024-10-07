@@ -2,7 +2,7 @@
 
 ## Experimental details
 * Experiment date: Oct 7th 2024
-* Dataset : Pascal VOC 2012
+* Dataset: Pascal VOC 2012
 * Task: Semantic Segmentation
 * Baseline model: U-Net
 * Optimizer: AdamW
@@ -12,7 +12,7 @@
 * Numerical Learning Result: Train loss 0.575, Val loss: 0.72
 
 ## Experiment results
-We provide some results over validation set
+We provide some results over the validation dataset.
 ![output](https://github.com/user-attachments/assets/1a106317-bf97-46fa-b9d6-e8475e3997ec)
 ![output2](https://github.com/user-attachments/assets/01c39b17-f822-4b54-96eb-c681415f4f93)
 ![output3](https://github.com/user-attachments/assets/c3be9477-360b-4a10-8547-5e4362365f34)
@@ -23,5 +23,5 @@ We provide some results over validation set
 ## Overall comment
 * Using cross-entropy loss showed a high tendency of over-fitting: used lovasz loss instead
 * But validation loss still did not decrease much either. We may have to try out more training times.
-* On optimizer, Adam based optimizer was much faster than SGD.
+* On optimizer, the Adam-based optimizer was much faster than SGD.
 * Anyway, the results are a bit poor, some may be well captured but some are misclassified or not even correctly detected.
